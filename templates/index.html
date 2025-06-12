@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor</title>
+    <link rel="stylesheet" href="/static/css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slideshow">
+            <button id="prev" class="nav-btn">&#10094;</button>
+            <img id="slide" src="/static/fotos/foto1.png" alt="Foto do casal">
+            <button id="next" class="nav-btn">&#10095;</button>
+        </div>
+
+        <div class="contador">
+            <h2>Estamos juntos há:</h2>
+            <div id="tempo_namoro" class="tempo"></div>
+            <h2>Estamos noivos há:</h2>
+            <div id="tempo_noivado" class="tempo"></div>
+        </div>
+
+        <div class="mensagem">
+            <p>"Cada segundo ao teu lado é especial. Te amo, meu amor!"</p>
+        </div>
+    </div>
+
+    <script>
+        const imagens = {{ imagens|tojson }};
+        const dataNamoro = new Date("{{ data_namoro }}");
+        const dataNoivado = new Date("{{ data_noivado }}");
+    </script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
