@@ -1,38 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
 body {
     margin: 0;
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
-    color: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #100c0c, #7b9036);
+    color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
 }
 
 .container {
     max-width: 800px;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 20px;
 }
 
 .slideshow {
     width: 100%;
     max-width: 800px;
     margin: 0 auto 30px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 16px;
+    background: linear-gradient(to bottom right, #100c0c, #7b9036);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    position: relative;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .slideshow img {
@@ -40,29 +32,24 @@ body {
     max-height: 400px;
     width: auto;
     height: auto;
-    border-radius: 16px;
+    border-radius: 12px;
     object-fit: contain;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease;
 }
+
+
 
 .nav-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
-    padding: 10px 14px;
-    border-radius: 50%;
+    padding: 10px;
     cursor: pointer;
-    z-index: 2;
-    transition: background-color 0.3s ease, transform 0.2s;
-}
-
-.nav-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-50%) scale(1.1);
+    z-index: 1;
 }
 
 #prev {
@@ -74,16 +61,12 @@ body {
 }
 
 .contador h2 {
-    margin: 15px 0 8px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #ffb6c1;
+    margin: 10px 0 5px;
 }
 
 .tempo {
-    font-size: 1.4rem;
-    margin-bottom: 25px;
-    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .mensagem p {
